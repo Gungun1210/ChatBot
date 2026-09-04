@@ -7,16 +7,16 @@ Helping customer to understand problem and how to fix it in an easy way and in t
 ## Folder structure
 ```
 ChatBot-app/
-  frontend/            React app (Vite)
-  backend/              Express API + AI/ML logic together
+  frontend/           
+  backend/            
     server.js
     routes/
-      diagnose.js       text + screenshot diagnosis endpoints
-      cases.js          case list + case lookup + stats endpoints
+      diagnose.js      
+      cases.js          
     utils/
-      aimlClient.js      <- the AI/ML API integration (OpenAI-compatible)
-      helplines.js       escalation helpline directory + script builder
-      caseStore.js        in-memory case storage
+      aimlClient.js     
+      helplines.js    
+      caseStore.js       
 ```
 
 ## What's included
