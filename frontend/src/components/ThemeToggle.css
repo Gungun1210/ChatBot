@@ -1,0 +1,18 @@
+.theme-toggle {
+  position: fixed;
+  top: 16px;
+  left: 16px;
+  z-index: 60;
+  background: var(--ink-card);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 8px 14px;
+  font-size: 12px;
+  color: var(--paper);
+  font-family: var(--mono);
+  box-shadow: 0 8px 20px -10px rgba(0, 0, 0, 0.4);
+}
+
+.theme-toggle:hover {
+  border-color: var(--saffron);
+}

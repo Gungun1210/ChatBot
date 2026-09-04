@@ -1,0 +1,112 @@
+.tracker-input-row {
+  display: flex;
+  gap: 10px;
+  max-width: 480px;
+}
+
+.tracker-input-row .chat-input {
+  background: var(--ink-soft);
+}
+
+.tracker-error {
+  margin-top: 12px;
+  color: var(--rose);
+  font-size: 14px;
+}
+
+.tracker-card {
+  margin-top: 24px;
+  background: var(--ink-soft);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 22px 24px;
+  max-width: 560px;
+}
+
+.tracker-meta {
+  display: flex;
+  justify-content: space-between;
+  font-family: var(--mono);
+  font-size: 13px;
+  color: var(--paper-dim);
+  margin-bottom: 18px;
+}
+
+.tracker-audit {
+  margin-top: 18px;
+}
+
+.tracker-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.tracker-step {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  color: var(--paper-dim);
+}
+
+.tracker-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+  background: var(--line);
+  flex-shrink: 0;
+}
+
+.tracker-step.done {
+  color: var(--paper);
+}
+
+.tracker-step.done .tracker-dot {
+  background: var(--mint);
+}
+
+.tracker-notify {
+  margin-top: 16px;
+  background: var(--mint-dim);
+  color: var(--mint);
+  border-radius: 10px;
+  padding: 10px 14px;
+  font-size: 13.5px;
+}
+
+.audit-trail {
+  background: var(--ink-card);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 14px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.audit-entry {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  border-left: 2px solid var(--saffron);
+  padding-left: 10px;
+}
+
+.audit-time {
+  font-family: var(--mono);
+  font-size: 10.5px;
+  color: var(--paper-dim);
+}
+
+.audit-action {
+  font-size: 12.5px;
+  text-transform: capitalize;
+  color: var(--saffron);
+  font-weight: 700;
+}
+
+.audit-detail {
+  font-size: 12.5px;
+  color: var(--paper-dim);
+}

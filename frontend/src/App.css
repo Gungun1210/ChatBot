@@ -1,0 +1,34 @@
+.app {
+  overflow-x: hidden;
+}
+
+.section-head {
+  max-width: 640px;
+  margin-bottom: 48px;
+}
+
+.section-head h2 {
+  font-size: clamp(26px, 3.4vw, 38px);
+  margin-top: 10px;
+}
+
+.section-sub {
+  margin-top: 14px;
+  font-size: 16px;
+}
+
+.tracker-divider {
+  border-top: 1px dashed var(--line);
+  margin: 32px 0;
+  max-width: 640px;
+}
+
+.connect-nudge {
+  margin-top: 14px;
+  font-size: 13.5px;
+  color: var(--saffron);
+  background: var(--saffron-dim);
+  border-radius: 10px;
+  padding: 10px 14px;
+  display: inline-block;
+}

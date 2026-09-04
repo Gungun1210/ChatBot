@@ -1,0 +1,141 @@
+:root,
+[data-theme='dark'] {
+  --ink: #0b1120;
+  --ink-soft: #131b2e;
+  --ink-card: #17203a;
+  --line: rgba(242, 239, 233, 0.1);
+  --paper: #f2efe9;
+  --paper-dim: rgba(242, 239, 233, 0.62);
+  --saffron: #ffa630;
+  --saffron-dim: rgba(255, 166, 48, 0.14);
+  --mint: #2ecc87;
+  --mint-dim: rgba(46, 204, 135, 0.14);
+  --rose: #ff6a5f;
+  --on-accent: #1a1204;
+
+  --display: 'Fraunces', serif;
+  --body: 'Manrope', sans-serif;
+  --mono: 'IBM Plex Mono', monospace;
+}
+
+[data-theme='light'] {
+  --ink: #f6f3ec;
+  --ink-soft: #ffffff;
+  --ink-card: #ffffff;
+  --line: rgba(20, 22, 30, 0.1);
+  --paper: #171a22;
+  --paper-dim: rgba(23, 26, 34, 0.62);
+  --saffron: #d9720a;
+  --saffron-dim: rgba(217, 114, 10, 0.1);
+  --mint: #1c8f5c;
+  --mint-dim: rgba(28, 143, 92, 0.1);
+  --rose: #c9463b;
+  --on-accent: #fffaf2;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--ink);
+  color: var(--paper);
+  font-family: var(--body);
+  scroll-behavior: smooth;
+}
+
+body {
+  background-image: radial-gradient(circle at 15% 0%, rgba(255, 166, 48, 0.08), transparent 45%),
+    radial-gradient(circle at 85% 20%, rgba(46, 204, 135, 0.06), transparent 40%);
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--display);
+  font-weight: 600;
+  line-height: 1.08;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+  color: var(--paper-dim);
+  line-height: 1.6;
+}
+
+a {
+  color: inherit;
+}
+
+button {
+  font-family: var(--body);
+  cursor: pointer;
+}
+
+.wrap {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 28px;
+}
+
+.eyebrow {
+  font-family: var(--mono);
+  font-size: 12px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--saffron);
+}
+
+.section {
+  padding: 96px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.btn {
+  border: none;
+  border-radius: 999px;
+  padding: 13px 26px;
+  font-weight: 700;
+  font-size: 15px;
+  transition: transform 0.15s ease, opacity 0.15s ease;
+}
+
+.btn:active {
+  transform: scale(0.97);
+}
+
+.btn-primary {
+  background: var(--saffron);
+  color: var(--on-accent);
+}
+
+.btn-primary:hover {
+  opacity: 0.9;
+}
+
+.btn-ghost {
+  background: transparent;
+  border: 1px solid var(--line);
+  color: var(--paper);
+}
+
+.btn-ghost:hover {
+  border-color: var(--saffron);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+@media (max-width: 720px) {
+  .section {
+    padding: 64px 0;
+  }
+}

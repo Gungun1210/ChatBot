@@ -1,0 +1,66 @@
+.how-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.how-card {
+  position: relative;
+  background: var(--ink-soft);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 24px 20px 26px;
+  transition: transform 0.15s ease, border-color 0.15s ease;
+}
+
+.how-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--saffron);
+}
+
+.how-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.how-icon {
+  font-size: 20px;
+}
+
+.how-n {
+  font-family: var(--mono);
+  color: var(--saffron);
+  font-size: 13px;
+}
+
+.how-card h3 {
+  font-size: 19px;
+  margin-top: 12px;
+}
+
+.how-card p {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.how-arrow {
+  display: none;
+}
+
+@media (min-width: 860px) {
+  .how-arrow {
+    display: block;
+    position: absolute;
+    right: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--paper-dim);
+  }
+}
+
+@media (max-width: 860px) {
+  .how-grid {
+    grid-template-columns: 1fr;
+  }
+}
